@@ -1,4 +1,5 @@
 #include <vector>
+#include <string>
 using namespace std;
 
 class Environment
@@ -12,7 +13,7 @@ class Environment
 	public:
 		Environment(int &dataNum, int &actionNum);
 		
-		CreateDataSet(int &n);
-		EvaluateAction(string action, string correctAction);
-		DataShuffle();
-}
+		void CreateDataSet();
+		void EvaluateAction(string action, string correctAction);
+		void DataShuffle();
+};

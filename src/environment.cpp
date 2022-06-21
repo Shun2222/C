@@ -4,18 +4,19 @@ using namespace std;
 
 Environment::Environment(int &dataNum, int &actionNum)
 {
+	m_dataNum = dataNum;
 	m_actionNum = actionNum;
 	m_reward = 0.0;
 	m_isEndProblem = true;
 }
 
-Environment::CreateDataSet(int &n)
+Environment::CreateDataSet()
 {
 	string data;
 	string action;
 
 	srand( time(NULL) );
-	for(int i=0; i<n; i++)
+	for(int i=0; i<m_dataNum; i++)
 	{
 		data = ''
 		for(int j=0; j<6; j++)

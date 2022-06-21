@@ -6,5 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/root/XCS/include/environment.hpp
+vector
+-
+string
+-
+
 /root/XCS/main.cpp
+include/environment.hpp
+/root/XCS/include/environment.hpp
+ostream
+-
+iostream
+-
 
