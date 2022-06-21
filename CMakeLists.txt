@@ -8,4 +8,4 @@ set(CMAKE_CXX_FLAGS "-std=c++17 -Wall")
 set(SRCS
     ${PROJECT_SOURCE_DIR}/main.cpp)
 add_executable(run ${SRCS})
-target_link_libraries(src)
+add_subdirectory(src)

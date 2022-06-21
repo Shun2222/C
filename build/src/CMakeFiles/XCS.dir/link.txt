@@ -1,0 +1,2 @@
+/usr/bin/ar qc libXCS.a  CMakeFiles/XCS.dir/environment.cpp.o
+/usr/bin/ranlib libXCS.a
