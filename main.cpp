@@ -9,6 +9,7 @@ int main()
 	int actionNum = 10;
 	Environment env(dataNum, actionNum);
 	env.CreateDataSet();
-	cout<<"finish"<<endl;
+	vector<string> dataset = env.GetDataSet();
+	cout<<dataset[0]<<endl;
 	return 0;
 }

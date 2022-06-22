@@ -14,6 +14,16 @@ Environment::Environment(int &dataNum, int &actionNum)
 	m_isEndProblem = true;
 }
 
+vector<string> Environment::GetActionSet()
+{
+	return m_actionSet;
+}
+
+vector<string> Environment::GetDataSet()
+{
+	return m_dataSet;
+}
+
 void Environment::CreateDataSet()
 {
 	string data;
@@ -29,10 +39,20 @@ void Environment::CreateDataSet()
 
 			data += to_string(rand()%2);
 		}
-		action = data[ctoi(data[0])*2+ctoi(data[1])+2];
 		m_dataSet.push_back(data);
-		m_actionSet.push_back(action); 
 
+	}
+}
+
+void Environment::CreateActionSet()
+{
+	string action;
+
+	m_actionSet = {};
+	for(int i=0; i<m_dataNum; i++)
+	{
+		action = m_dataSet[i][ctoi(data[0])*2+ctoi(data[1])+2];
+		m_actionSet.push_back(action); 
 	}
 }
 void Environment::EvaluateAction(string &action, string &correctAction)
@@ -41,5 +61,7 @@ void Environment::EvaluateAction(string &action, string &correctAction)
 }
 void Environment::DataShuffle()
 {
-
+	mt19937 get_rand_mt;
+	shuffle(m_dataSet.begin(), m_dataSet.end(), get_rand_mt );
+	CreateActionSet();
 }

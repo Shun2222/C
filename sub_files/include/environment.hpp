@@ -11,9 +11,13 @@ class Environment
 		vector<string> m_dataSet;
 		vector<string> m_actionSet;
 		bool m_isEndProblem;
+	
 	public:
 		Environment(int &dataNum, int &actionNum);
-		
+
+		vector<string> GetActionSet();	
+		vector<string> GetDataSet();
+
 		void CreateDataSet();
 		void EvaluateAction(string &action, string &correctAction);
 		void DataShuffle();
