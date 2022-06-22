@@ -1,1 +1,1 @@
-/usr/bin/c++  -std=c++17 -Wall  -rdynamic CMakeFiles/run.dir/main.cpp.o  -o run 
+/usr/bin/c++  -std=c++17 -Wall  -rdynamic CMakeFiles/run.dir/main.cpp.o  -o run  sub_files/libsub_files.a 

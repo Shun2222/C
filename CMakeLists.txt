@@ -7,5 +7,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_FLAGS "-std=c++17 -Wall")
 set(SRCS
     ${PROJECT_SOURCE_DIR}/main.cpp)
+add_subdirectory(./sub_files)
 add_executable(run ${SRCS})
-add_subdirectory(src)
+target_link_libraries(run sub_files)

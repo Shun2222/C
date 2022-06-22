@@ -1,6 +1,10 @@
 #include "environment.hpp"
 #include <random>
 using namespace std;
+int ctoi(char &c){
+	string s = {c};
+	return stoi(s); 
+}
 
 Environment::Environment(int &dataNum, int &actionNum)
 {
@@ -10,30 +14,32 @@ Environment::Environment(int &dataNum, int &actionNum)
 	m_isEndProblem = true;
 }
 
-Environment::CreateDataSet()
+void Environment::CreateDataSet()
 {
 	string data;
 	string action;
+	string str;
 
 	srand( time(NULL) );
 	for(int i=0; i<m_dataNum; i++)
 	{
-		data = ''
+		data = "";
 		for(int j=0; j<6; j++)
 		{
-			data += to_string(rand()%2)
+
+			data += to_string(rand()%2);
 		}
-		action = data[stoi(data[0])*2+stoi(data[1])+2];
+		action = data[ctoi(data[0])*2+ctoi(data[1])+2];
 		m_dataSet.push_back(data);
-		m_actionSet.push_back(action)
+		m_actionSet.push_back(action); 
 
 	}
 }
-Environment::EvaluateAction(string &action, string &correctAction)
+void Environment::EvaluateAction(string &action, string &correctAction)
 {
 
 }
-Environment::DataShuffle()
+void Environment::DataShuffle()
 {
 
 }

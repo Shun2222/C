@@ -54,52 +54,52 @@ CMAKE_BINARY_DIR = /root/XCS/build
 
 # The main recursive "all" target.
 all: CMakeFiles/run.dir/all
-all: src/all
+all: sub_files/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: src/preinstall
+preinstall: sub_files/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/run.dir/clean
-clean: src/clean
+clean: sub_files/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory src
+# Directory level rules for directory sub_files
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/XCS.dir/all
+sub_files/all: sub_files/CMakeFiles/sub_files.dir/all
 
-.PHONY : src/all
+.PHONY : sub_files/all
 
 # Recursive "preinstall" directory target.
-src/preinstall:
+sub_files/preinstall:
 
-.PHONY : src/preinstall
+.PHONY : sub_files/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/XCS.dir/clean
+sub_files/clean: sub_files/CMakeFiles/sub_files.dir/clean
 
-.PHONY : src/clean
+.PHONY : sub_files/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/run.dir
 
 # All Build rule for target.
-CMakeFiles/run.dir/all:
+CMakeFiles/run.dir/all: sub_files/CMakeFiles/sub_files.dir/all
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/XCS/build/CMakeFiles --progress-num=3,4 "Built target run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/XCS/build/CMakeFiles --progress-num=1,2 "Built target run"
 .PHONY : CMakeFiles/run.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/XCS/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/XCS/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/XCS/build/CMakeFiles 0
 .PHONY : CMakeFiles/run.dir/rule
@@ -115,31 +115,31 @@ CMakeFiles/run.dir/clean:
 .PHONY : CMakeFiles/run.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/XCS.dir
+# Target rules for target sub_files/CMakeFiles/sub_files.dir
 
 # All Build rule for target.
-src/CMakeFiles/XCS.dir/all:
-	$(MAKE) -f src/CMakeFiles/XCS.dir/build.make src/CMakeFiles/XCS.dir/depend
-	$(MAKE) -f src/CMakeFiles/XCS.dir/build.make src/CMakeFiles/XCS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/XCS/build/CMakeFiles --progress-num=1,2 "Built target XCS"
-.PHONY : src/CMakeFiles/XCS.dir/all
+sub_files/CMakeFiles/sub_files.dir/all:
+	$(MAKE) -f sub_files/CMakeFiles/sub_files.dir/build.make sub_files/CMakeFiles/sub_files.dir/depend
+	$(MAKE) -f sub_files/CMakeFiles/sub_files.dir/build.make sub_files/CMakeFiles/sub_files.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/XCS/build/CMakeFiles --progress-num=3,4 "Built target sub_files"
+.PHONY : sub_files/CMakeFiles/sub_files.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/XCS.dir/rule: cmake_check_build_system
+sub_files/CMakeFiles/sub_files.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/XCS/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/XCS.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 sub_files/CMakeFiles/sub_files.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/XCS/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/XCS.dir/rule
+.PHONY : sub_files/CMakeFiles/sub_files.dir/rule
 
 # Convenience name for target.
-XCS: src/CMakeFiles/XCS.dir/rule
+sub_files: sub_files/CMakeFiles/sub_files.dir/rule
 
-.PHONY : XCS
+.PHONY : sub_files
 
 # clean rule for target.
-src/CMakeFiles/XCS.dir/clean:
-	$(MAKE) -f src/CMakeFiles/XCS.dir/build.make src/CMakeFiles/XCS.dir/clean
-.PHONY : src/CMakeFiles/XCS.dir/clean
+sub_files/CMakeFiles/sub_files.dir/clean:
+	$(MAKE) -f sub_files/CMakeFiles/sub_files.dir/build.make sub_files/CMakeFiles/sub_files.dir/clean
+.PHONY : sub_files/CMakeFiles/sub_files.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

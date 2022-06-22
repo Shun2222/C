@@ -189,6 +189,18 @@ XCS_BINARY_DIR:STATIC=/root/XCS/build
 //Value Computed by CMake
 XCS_SOURCE_DIR:STATIC=/root/XCS
 
+//Value Computed by CMake
+subfiles_BINARY_DIR:STATIC=/root/XCS/build/sub_files
+
+//Value Computed by CMake
+subfiles_SOURCE_DIR:STATIC=/root/XCS/sub_files
+
+//Value Computed by CMake
+subfiles_lib_BINARY_DIR:STATIC=/root/XCS/build/sub_files
+
+//Value Computed by CMake
+subfiles_lib_SOURCE_DIR:STATIC=/root/XCS/sub_files
+
 
 ########################
 # INTERNAL cache entries

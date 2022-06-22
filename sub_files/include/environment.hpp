@@ -5,6 +5,7 @@ using namespace std;
 class Environment
 {
 	private:
+		int m_dataNum;
 		int m_actionNum;
 		double m_reward;
 		vector<string> m_dataSet;
@@ -14,6 +15,6 @@ class Environment
 		Environment(int &dataNum, int &actionNum);
 		
 		void CreateDataSet();
-		void EvaluateAction(string action, string correctAction);
+		void EvaluateAction(string &action, string &correctAction);
 		void DataShuffle();
 };

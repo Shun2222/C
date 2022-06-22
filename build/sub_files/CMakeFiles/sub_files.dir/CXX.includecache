@@ -12,11 +12,9 @@ vector
 string
 -
 
-/root/XCS/main.cpp
+/root/XCS/sub_files/src/environment.cpp
 environment.hpp
-/root/XCS/environment.hpp
-ostream
--
-iostream
+/root/XCS/sub_files/src/environment.hpp
+random
 -
 
