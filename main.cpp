@@ -1,4 +1,5 @@
 #include "environment.hpp"
+#include "output.hpp"
 #include <ostream>
 #include <iostream>
 using namespace std;
@@ -10,6 +11,9 @@ int main()
 	Environment env(dataNum, actionNum);
 	env.CreateDataSet();
 	vector<string> dataset = env.GetDataSet();
-	cout<<dataset[0]<<endl;
+
+	Output out(env);
+	out.WriteData();
+
 	return 0;
 }

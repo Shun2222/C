@@ -1,5 +1,9 @@
+#pragma once
 #include <vector>
 #include <string>
+#include <random>
+#include <algorithm>
+
 using namespace std;
 
 class Environment
@@ -13,12 +17,15 @@ class Environment
 		bool m_isEndProblem;
 	
 	public:
+		Environment();
 		Environment(int &dataNum, int &actionNum);
 
+		int GetDataNum();
 		vector<string> GetActionSet();	
 		vector<string> GetDataSet();
 
 		void CreateDataSet();
+		void CreateActionSet();
 		void EvaluateAction(string &action, string &correctAction);
 		void DataShuffle();
 };

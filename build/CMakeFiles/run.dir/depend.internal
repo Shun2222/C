@@ -3,4 +3,5 @@
 
 CMakeFiles/run.dir/main.cpp.o
  ../sub_files/include/environment.hpp
+ ../sub_files/include/output.hpp
  /root/XCS/main.cpp

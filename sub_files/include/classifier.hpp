@@ -1,3 +1,4 @@
+#pragma once
 #include "hyperparameter.hpp"
 using namespace std;
 

@@ -1,2 +1,2 @@
-/usr/bin/ar qc libsub_files.a  CMakeFiles/sub_files.dir/src/environment.cpp.o
+/usr/bin/ar qc libsub_files.a  CMakeFiles/sub_files.dir/src/environment.cpp.o CMakeFiles/sub_files.dir/src/output.cpp.o
 /usr/bin/ranlib libsub_files.a

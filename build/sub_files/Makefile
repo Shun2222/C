@@ -152,6 +152,33 @@ src/environment.cpp.s:
 	cd /root/XCS/build && $(MAKE) -f sub_files/CMakeFiles/sub_files.dir/build.make sub_files/CMakeFiles/sub_files.dir/src/environment.cpp.s
 .PHONY : src/environment.cpp.s
 
+src/output.o: src/output.cpp.o
+
+.PHONY : src/output.o
+
+# target to build an object file
+src/output.cpp.o:
+	cd /root/XCS/build && $(MAKE) -f sub_files/CMakeFiles/sub_files.dir/build.make sub_files/CMakeFiles/sub_files.dir/src/output.cpp.o
+.PHONY : src/output.cpp.o
+
+src/output.i: src/output.cpp.i
+
+.PHONY : src/output.i
+
+# target to preprocess a source file
+src/output.cpp.i:
+	cd /root/XCS/build && $(MAKE) -f sub_files/CMakeFiles/sub_files.dir/build.make sub_files/CMakeFiles/sub_files.dir/src/output.cpp.i
+.PHONY : src/output.cpp.i
+
+src/output.s: src/output.cpp.s
+
+.PHONY : src/output.s
+
+# target to generate assembly for a file
+src/output.cpp.s:
+	cd /root/XCS/build && $(MAKE) -f sub_files/CMakeFiles/sub_files.dir/build.make sub_files/CMakeFiles/sub_files.dir/src/output.cpp.s
+.PHONY : src/output.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -164,6 +191,9 @@ help:
 	@echo "... src/environment.o"
 	@echo "... src/environment.i"
 	@echo "... src/environment.s"
+	@echo "... src/output.o"
+	@echo "... src/output.i"
+	@echo "... src/output.s"
 .PHONY : help
 
 

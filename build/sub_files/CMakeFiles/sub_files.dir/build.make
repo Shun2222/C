@@ -70,17 +70,32 @@ sub_files/CMakeFiles/sub_files.dir/src/environment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sub_files.dir/src/environment.cpp.s"
 	cd /root/XCS/build/sub_files && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/XCS/sub_files/src/environment.cpp -o CMakeFiles/sub_files.dir/src/environment.cpp.s
 
+sub_files/CMakeFiles/sub_files.dir/src/output.cpp.o: sub_files/CMakeFiles/sub_files.dir/flags.make
+sub_files/CMakeFiles/sub_files.dir/src/output.cpp.o: ../sub_files/src/output.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/XCS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sub_files/CMakeFiles/sub_files.dir/src/output.cpp.o"
+	cd /root/XCS/build/sub_files && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sub_files.dir/src/output.cpp.o -c /root/XCS/sub_files/src/output.cpp
+
+sub_files/CMakeFiles/sub_files.dir/src/output.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sub_files.dir/src/output.cpp.i"
+	cd /root/XCS/build/sub_files && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/XCS/sub_files/src/output.cpp > CMakeFiles/sub_files.dir/src/output.cpp.i
+
+sub_files/CMakeFiles/sub_files.dir/src/output.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sub_files.dir/src/output.cpp.s"
+	cd /root/XCS/build/sub_files && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/XCS/sub_files/src/output.cpp -o CMakeFiles/sub_files.dir/src/output.cpp.s
+
 # Object files for target sub_files
 sub_files_OBJECTS = \
-"CMakeFiles/sub_files.dir/src/environment.cpp.o"
+"CMakeFiles/sub_files.dir/src/environment.cpp.o" \
+"CMakeFiles/sub_files.dir/src/output.cpp.o"
 
 # External object files for target sub_files
 sub_files_EXTERNAL_OBJECTS =
 
 sub_files/libsub_files.a: sub_files/CMakeFiles/sub_files.dir/src/environment.cpp.o
+sub_files/libsub_files.a: sub_files/CMakeFiles/sub_files.dir/src/output.cpp.o
 sub_files/libsub_files.a: sub_files/CMakeFiles/sub_files.dir/build.make
 sub_files/libsub_files.a: sub_files/CMakeFiles/sub_files.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/XCS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libsub_files.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/XCS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libsub_files.a"
 	cd /root/XCS/build/sub_files && $(CMAKE_COMMAND) -P CMakeFiles/sub_files.dir/cmake_clean_target.cmake
 	cd /root/XCS/build/sub_files && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sub_files.dir/link.txt --verbose=$(VERBOSE)
 
