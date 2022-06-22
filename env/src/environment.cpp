@@ -20,22 +20,22 @@ Environment::Environment(int &dataNum, int &actionNum)
 	m_isEndProblem = true;
 }
 
-int Environment::GetDataNum()
+int Environment::getDataNum()
 {
 	return m_dataNum;
 }
 
-vector<string> Environment::GetActionSet()
+vector<string> Environment::getActionSet()
 {
 	return m_actionSet;
 }
 
-vector<string> Environment::GetDataSet()
+vector<string> Environment::getDataSet()
 {
 	return m_dataSet;
 }
 
-void Environment::CreateDataSet()
+void Environment::createDataSet()
 {
 	string data;
 	string action;
@@ -56,7 +56,7 @@ void Environment::CreateDataSet()
 	CreateActionSet();
 }
 
-void Environment::CreateActionSet()
+void Environment::createActionSet()
 {
 	string action;
 
@@ -67,14 +67,26 @@ void Environment::CreateActionSet()
 		m_actionSet.push_back(action); 
 	}
 }
-void Environment::EvaluateAction(string &action, string &correctAction)
+double Environment::receiveReward(char &action, char &correctAction)
 {
-
+	if(action==correctAction)
+	{
+		m_reward = 1000;
+	}else
+	{
+		m_reward = 0;
+	}
+	return m_reward;
 }
 
-void Environment::DataShuffle()
+void Environment::dataShuffle()
 {
 	mt19937 get_rand_mt;
 	shuffle(m_dataSet.begin(), m_dataSet.end(), get_rand_mt );
 	CreateActionSet();
+}
+
+bool isEndProblem()
+{
+	return m_isEndProblem;
 }

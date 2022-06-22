@@ -20,12 +20,13 @@ class Environment
 		Environment();
 		Environment(int &dataNum, int &actionNum);
 
-		int GetDataNum();
-		vector<string> GetActionSet();	
-		vector<string> GetDataSet();
+		int getDataNum();
+		vector<string> getActionSet();	
+		vector<string> getDataSet();
 
-		void CreateDataSet();
-		void CreateActionSet();
-		void EvaluateAction(string &action, string &correctAction);
-		void DataShuffle();
+		void createDataSet();
+		void createActionSet();
+		double recieveReward(char &action, char &correctAction);
+		void dataShuffle();
+		bool isEndProblem();
 };

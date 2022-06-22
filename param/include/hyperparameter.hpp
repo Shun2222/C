@@ -1,8 +1,8 @@
-struct Param {
+struct HyperParameter {
     int N=1000;
     double BETA=0.1;
     double ALPHA = 0.1
-    int EPS_0 = 10
+    int EPS_I = 10
     int NU = 5
     double GAMMA = 0.71
     int THETA_GA = 50
