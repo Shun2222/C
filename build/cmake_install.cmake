@@ -39,7 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/XCS/build/sub_files/cmake_install.cmake")
+  include("/root/XCS/build/param/cmake_install.cmake")
+  include("/root/XCS/build/output/cmake_install.cmake")
+  include("/root/XCS/build/xcs/cmake_install.cmake")
+  include("/root/XCS/build/env/cmake_install.cmake")
 
 endif()
 

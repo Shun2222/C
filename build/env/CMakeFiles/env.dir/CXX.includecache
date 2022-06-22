@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../env/include/environment.hpp
+vector
+-
+string
+-
+random
+-
+algorithm
+-
+
+/root/XCS/env/src/environment.cpp
+environment.hpp
+/root/XCS/env/src/environment.hpp
+

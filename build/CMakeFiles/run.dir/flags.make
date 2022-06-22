@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++17 -Wall   -std=c++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/root/XCS/sub_files/./include 
+CXX_INCLUDES = -I/root/XCS/param/./include -I/root/XCS/output/./include -I/root/XCS/env/./include -I/root/XCS/xcs/./include 
 

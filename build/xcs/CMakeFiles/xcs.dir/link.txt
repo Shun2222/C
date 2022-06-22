@@ -1,0 +1,2 @@
+/usr/bin/ar qc libxcs.a  CMakeFiles/xcs.dir/src/xcs.cpp.o
+/usr/bin/ranlib libxcs.a

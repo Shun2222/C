@@ -190,6 +190,27 @@ XCS_BINARY_DIR:STATIC=/root/XCS/build
 XCS_SOURCE_DIR:STATIC=/root/XCS
 
 //Value Computed by CMake
+env_lib_BINARY_DIR:STATIC=/root/XCS/build/env
+
+//Value Computed by CMake
+env_lib_SOURCE_DIR:STATIC=/root/XCS/env
+
+//Dependencies for the target
+output_LIB_DEPENDS:STATIC=general;env;
+
+//Value Computed by CMake
+output_lib_BINARY_DIR:STATIC=/root/XCS/build/output
+
+//Value Computed by CMake
+output_lib_SOURCE_DIR:STATIC=/root/XCS/output
+
+//Value Computed by CMake
+param_lib_BINARY_DIR:STATIC=/root/XCS/build/param
+
+//Value Computed by CMake
+param_lib_SOURCE_DIR:STATIC=/root/XCS/param
+
+//Value Computed by CMake
 subfiles_BINARY_DIR:STATIC=/root/XCS/build/sub_files
 
 //Value Computed by CMake
@@ -200,6 +221,12 @@ subfiles_lib_BINARY_DIR:STATIC=/root/XCS/build/sub_files
 
 //Value Computed by CMake
 subfiles_lib_SOURCE_DIR:STATIC=/root/XCS/sub_files
+
+//Value Computed by CMake
+xcs_lib_BINARY_DIR:STATIC=/root/XCS/build/xcs
+
+//Value Computed by CMake
+xcs_lib_SOURCE_DIR:STATIC=/root/XCS/xcs
 
 
 ########################
@@ -290,7 +317,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

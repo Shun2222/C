@@ -1,6 +1,14 @@
 /root/XCS/build/CMakeFiles/rebuild_cache.dir
 /root/XCS/build/CMakeFiles/edit_cache.dir
 /root/XCS/build/CMakeFiles/run.dir
-/root/XCS/build/sub_files/CMakeFiles/rebuild_cache.dir
-/root/XCS/build/sub_files/CMakeFiles/edit_cache.dir
-/root/XCS/build/sub_files/CMakeFiles/sub_files.dir
+/root/XCS/build/param/CMakeFiles/rebuild_cache.dir
+/root/XCS/build/param/CMakeFiles/edit_cache.dir
+/root/XCS/build/output/CMakeFiles/rebuild_cache.dir
+/root/XCS/build/output/CMakeFiles/edit_cache.dir
+/root/XCS/build/output/CMakeFiles/output.dir
+/root/XCS/build/xcs/CMakeFiles/rebuild_cache.dir
+/root/XCS/build/xcs/CMakeFiles/edit_cache.dir
+/root/XCS/build/xcs/CMakeFiles/xcs.dir
+/root/XCS/build/env/CMakeFiles/rebuild_cache.dir
+/root/XCS/build/env/CMakeFiles/edit_cache.dir
+/root/XCS/build/env/CMakeFiles/env.dir

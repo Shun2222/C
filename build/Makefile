@@ -124,17 +124,43 @@ run/fast:
 .PHONY : run/fast
 
 #=============================================================================
-# Target rules for targets named sub_files
+# Target rules for targets named output
 
 # Build rule for target.
-sub_files: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sub_files
-.PHONY : sub_files
+output: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 output
+.PHONY : output
 
 # fast build rule for target.
-sub_files/fast:
-	$(MAKE) -f sub_files/CMakeFiles/sub_files.dir/build.make sub_files/CMakeFiles/sub_files.dir/build
-.PHONY : sub_files/fast
+output/fast:
+	$(MAKE) -f output/CMakeFiles/output.dir/build.make output/CMakeFiles/output.dir/build
+.PHONY : output/fast
+
+#=============================================================================
+# Target rules for targets named xcs
+
+# Build rule for target.
+xcs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 xcs
+.PHONY : xcs
+
+# fast build rule for target.
+xcs/fast:
+	$(MAKE) -f xcs/CMakeFiles/xcs.dir/build.make xcs/CMakeFiles/xcs.dir/build
+.PHONY : xcs/fast
+
+#=============================================================================
+# Target rules for targets named env
+
+# Build rule for target.
+env: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 env
+.PHONY : env
+
+# fast build rule for target.
+env/fast:
+	$(MAKE) -f env/CMakeFiles/env.dir/build.make env/CMakeFiles/env.dir/build
+.PHONY : env/fast
 
 main.o: main.cpp.o
 
@@ -172,7 +198,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... run"
-	@echo "... sub_files"
+	@echo "... output"
+	@echo "... xcs"
+	@echo "... env"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

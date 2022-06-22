@@ -79,7 +79,9 @@ run_EXTERNAL_OBJECTS =
 
 run: CMakeFiles/run.dir/main.cpp.o
 run: CMakeFiles/run.dir/build.make
-run: sub_files/libsub_files.a
+run: output/liboutput.a
+run: xcs/libxcs.a
+run: env/libenv.a
 run: CMakeFiles/run.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/XCS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable run"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run.dir/link.txt --verbose=$(VERBOSE)
