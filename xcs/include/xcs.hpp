@@ -2,26 +2,26 @@
 #include <string>
 #include <vector>
 using namespace std;
-using namespace Datas;
 
-struct Datas 
+struct Data
 {
-	vector<Classifier> P; //Population
-	vector<double> PA; //Predict Array
-	vector<string> M; // Matched Set
-	vector<string> A; // Action Set
-	vector<string> prevSigma; // Previous State
-	vector<string> prevA; // Previous Action
-	int prevRho;
 }
 class XCS
 {
 	private:
+	public:
 		Environment m_env;
 		Pram m_param;
 		int m_iteration;
+		vector<Classifier> P; //Population
+		vector<double> PA; //Predict Array
+		vector<string> M; // Matched Set
+		vector<Classifier> A; // Action Set
+		vector<string> prevSigma; // Previous State
+		vector<string> prevA; // Previous Action
+		int prevRho;
+		HyperPrameter pram;
 		
-	public:
 		XCS(Environment env);
 		void execute();
 		void run(string &sigma, char &correctAction);
